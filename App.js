@@ -3,7 +3,7 @@ import { View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { LoginScreen  } from './src/screens/loginScreen';
-import { HomeScreen } from './src/screens/homScreen';
+import { HomeScreen } from './src/screens/homeScreen';
 import { CustomerOrSupplier } from './src/screens/customerOrSupplierScreen';
 
 
@@ -14,8 +14,8 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator>
       <Stack.Screen name="customerorsupllier" component={CustomerOrSupplier} />
-        <Stack.Screen name="login" component={LoginScreen} />
-        <Stack.Screen name="home" component={HomeScreen} />
+        <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen name="Home" component={HomeScreen} />
         </Stack.Navigator>
     
     </NavigationContainer>

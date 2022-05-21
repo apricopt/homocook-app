@@ -1,5 +1,8 @@
-import {StyleSheet} from 'react-native'
+import {StyleSheet , Dimensions} from 'react-native'
+import { backgroundColor } from 'react-native/Libraries/Components/View/ReactNativeStyleAttributes';
 
+const windowHeight = parseInt(Dimensions.get('window').height);
+const windowWidth = parseInt(Dimensions.get('window').width);
 
 export default StyleSheet.create({
     btnPrimary : {
@@ -14,12 +17,46 @@ export default StyleSheet.create({
     shadowRadius: 2,  
     elevation:4, 
     },
-    btnText : {
-        
+    screenBody : {flex: 1,
+         alignItems: 'center', 
+    justifyContent: 'flex-start',
+    // backgroundColor: "#5c5c5c"
 
+},
+    cardPrimary : {
+        margin:3,
+        backgroundColor : "#e6e6e6",
+        width:"90%",
+        height: windowHeight/3 - 50,
+        justifyContent: "center",
+        alignItems : "center",
+         shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.8,
+    shadowRadius: 2,  
+    elevation:4, 
+    padding : 20,
+    },
+    cardImg: {
+        width: parseInt(windowWidth)/1.6,
+      //   height: 300,
+      flex: 1,
+      justifyContent :"center",
+      flexDirection : "row",
+    //   backgroundColor: "pink"
+
+
+      },
+      cardInnerContent: {
+        flex : 1,
+        justifyContent :"center",
+        // backgroundColor : "blue"
+ 
+      },
+    primaryText : {
         color: "black",
         textAlign:"center",
-        fontSize:20,
+        fontSize:25,
         justifyContent: "center"
     },
     linkText : {
@@ -52,7 +89,6 @@ export default StyleSheet.create({
     textDanger :  {
         color:"red",
         paddingVertical: 5,
-    
     },
     lightIcon: {
         margin:10,
@@ -61,6 +97,14 @@ export default StyleSheet.create({
     darkIcon: {
         margin:10,
         color:"#3d3d3b"
-    }
+    },
+    bannerText :  {
+        color:"#E01E1E",
+        paddingVertical: 10,
+        backgroundColor : "black",
+        width : "100%",
+        textAlign : "center"
+
+    },
 
 })

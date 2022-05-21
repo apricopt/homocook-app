@@ -7,7 +7,7 @@ export function LoginScreen({route, navigation}) {
         <Button 
         title="Login"
         color="#841584"
-        onPress={() => navigation.navigate("home") } 
+        onPress={() => navigation.navigate("Home") } 
         />
       </View>
     );
