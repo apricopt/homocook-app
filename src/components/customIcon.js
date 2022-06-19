@@ -57,13 +57,13 @@ export function UniversalIcons(props) {
       return <Ionicons name="cart-outline" size={size} color={color} />;
     }
   } 
-  else if (routeName == 'feed') {
+  else if (routeName == 'chefs') {
     if (focused) {
       return (
-        <Ionicons name="newspaper" size={focusedSize} color={focusedColor} />
+        <Ionicons name="restaurant" size={focusedSize} color={focusedColor} />
       );
     } else {
-      return <Ionicons name="newspaper-outline" size={size} color={color} />;
+      return <Ionicons name="restaurant-outline" size={size} color={color} />;
     }
   } 
   return (

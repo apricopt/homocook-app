@@ -106,5 +106,50 @@ export default StyleSheet.create({
         textAlign : "center"
 
     },
+    chipContainer : {
+        flexDirection : "row",
+        justifyContent: "flex-start"
+    },
+    avatarContainer : {
+        flex:1,
+        // backgroundColor: "pink"
+        
+    },
+    avatarCard : {
+        // backgroundColor: "blue",
+        margin: 5,  
+        flexDirection: "row"
+    },
+    avatarCardAvatar : {
+        // backgroundColor: "green",
+        margin: 5,  
+        justifyContent : "center",
+        alignItems: "center",
+        paddingTop: 5
+       
+    },
+
+    avatarCardContent : {
+        flex: 1,
+        backgroundColor: "orange",
+        margin: 5,  
+        justifyContent: "center",
+        alignItems: "center"
+    },
+    avatarText : {
+        fontSize: 18
+    },
+     starStyle : {
+        width: 100,
+        height: 20,
+        marginBottom: 20,
+        marginTop: 20,
+    },
+    buttonContainer : {
+        flexDirection: "row",
+        
+
+    }
+
 
 })

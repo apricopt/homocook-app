@@ -1,7 +1,7 @@
 import { View, Text } from 'react-native';
 import  {UniversalIcons} from '../components/customIcon';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
-import { MainScreen } from './customerScreens/mainScreen';
+import { ChefScreen } from './customerScreens/chefScreen';
 import { MenuScreen } from './customerScreens/menuScreen';
 import { OrderScreen } from './customerScreens/orderScreen';
 const Tab = createMaterialTopTabNavigator();
@@ -44,7 +44,7 @@ export function HomeScreen() {
         >
       
       <Tab.Screen name="menu" component={MenuScreen} />
-        <Tab.Screen name="feed" component={MainScreen} />
+        <Tab.Screen name="chefs" component={ChefScreen} />
         <Tab.Screen name="order" component={OrderScreen} />
 
       </Tab.Navigator>
